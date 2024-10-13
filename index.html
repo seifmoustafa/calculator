@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="calculator-container" id="calculator">
+      <button id="theme-toggle" class="theme-toggle">☀️</button>
+      <input type="text" id="display" class="display" disabled />
+
+      <div class="button-grid">
+        <!-- Scientific buttons -->
+        <button class="button operation">sin</button>
+        <button class="button operation">cos</button>
+        <button class="button operation">tan</button>
+        <button class="button operation">√</button>
+
+        <button class="button operation">log</button>
+        <button class="button operation">ln</button>
+        <button class="button operation">exp</button>
+        <button class="button operation">π</button>
+
+        <button class="button operation">e</button>
+        <button class="button operation">x^y</button>
+        <button class="button operation">AC</button>
+        <button class="button operation">DEL</button>
+
+        <!-- Numeric and operator buttons -->
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button operation">/</button>
+
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button operation">*</button>
+
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button operation">-</button>
+
+        <button class="button" style="grid-column: span 2">0</button>
+        <button class="button">.</button>
+        <button class="button operation">+</button>
+        <button class="button equals">=</button>
+      </div>
+    </div>
+    <script src="js/scientific.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/constants.js"></script>
+  </body>
+</html>

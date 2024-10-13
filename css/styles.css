@@ -1,0 +1,136 @@
+/* Body styling */
+/* Update button grid layout */
+/* Update button grid layout */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 equal-width columns */
+  gap: 15px;
+  padding-bottom: 10px; /* Add some padding to the bottom */
+}
+
+/* Style for the "=" button */
+.button.equals {
+  background: rgba(0, 255, 100, 0.7);
+  grid-column: 3 / 5;  /* Make it span the last two columns */
+  height: 70px;  /* Same height as other buttons */
+  border-radius: 20px;
+  align-self: end; /* Align it to the bottom */
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+.calculator-container {
+  position: relative;
+  width: 350px;
+  height: 650px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Display section */
+.display {
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  font-weight: 700;
+}
+
+/* Button grid layout */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button styling */
+.button {
+  border: none;
+  height: 70px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Active button effect */
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Operation button colors */
+.button.operation {
+  background: rgba(0, 150, 255, 0.7);
+}
+
+/* Equals button */
+.button.equals {
+  background: rgba(0, 255, 100, 0.7);
+}
+
+/* Hover effect */
+.button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.dark-mode .button {
+  background: rgba(50, 50, 50, 0.5);
+  color: #ddd;
+}
+
+.dark-mode .button.operation {
+  background: rgba(0, 100, 200, 0.7);
+}
+
+.dark-mode .button.equals {
+  background: rgba(0, 200, 100, 0.7);
+}
+
+.dark-mode .display {
+  color: #eee;
+}
